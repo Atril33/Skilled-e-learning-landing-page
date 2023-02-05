@@ -18,10 +18,14 @@ html {
 }
 
 body {
-  font-family:"Plus Jakarta Sans", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   background-color: #f3f6fd;
-  margin-bottom: 400px;
-  overflow-x: hidden;
+}
+
+button {
+  border-radius: 25px;
+  padding: 0 25px;
+  font-size: 1rem;
 }
 
 header {
@@ -37,19 +41,19 @@ nav {
 
 .logo {
   font-size: 2rem;
-  color: var(--primary-color);
   font-weight: 700;
   font-family: "Righteous", cursive;
   user-select: none;
 }
 
+nav .logo {
+  color: var(--primary-color);
+}
+
 nav button {
   color: #fff;
   background-color: var(--primary-color);
-  border-radius: 25px;
   border-color: var(--primary-color);
-  padding: 0 25px;
-  font-size: 1rem;
 }
 
 .headline {
@@ -74,10 +78,8 @@ p {
 .headline button {
   color: #fff;
   background-image: linear-gradient(to bottom, #fd6556, #f2319e);
-  border-radius: 25px;
   border: none;
   padding: 10px 25px;
-  font-size: 1rem;
   margin-left: 1rem;
 }
 
@@ -92,11 +94,11 @@ p {
 }
 
 .design {
-  width: 80%;
-  padding-bottom: 80%;
+  width: 75%;
+  padding-bottom: 75%;
   border-radius: 50%;
   position: relative;
-  background-image: linear-gradient(to bottom, #fd6556, #f2319e);
+  background: url(images/girl_hero_img.png) no-repeat right 75% bottom, linear-gradient(to bottom, #fd6556, #f2319e);
 }
 
 .members-hours {
@@ -105,7 +107,6 @@ p {
   border-radius: 5px;
   padding: 15px;
   position: absolute;
-
 }
 
 .members-hours:nth-child(1) {
@@ -113,11 +114,11 @@ p {
   top: 0;
 }
 
-
 .members-hours:nth-child(2) {
   left: -50px;
   bottom: 0;
 }
+
 .members-hours * {
   padding: 0;
 }
@@ -131,8 +132,7 @@ p {
   font-size: 2.5rem;
 }
 
-
- .features {
+.features {
   margin-top: 50px;
   width: 100%;
   height: auto;
@@ -142,16 +142,16 @@ p {
 
 .feature-tab {
   width: 100%;
-  height: auto; 
+  height: auto;
   padding: 25px;
-  margin: 30px 0;
+  margin: 35px 0 30px 0;
   background: #fff;
   border-radius: 15px;
 }
 
 .feature-tab h3 {
- font-weight: 900;
- font-size: 22px;
+  font-weight: 900;
+  font-size: 1.375rem;
 }
 
 .feature-tab p {
@@ -159,12 +159,36 @@ p {
 }
 
 .link_bttn {
- color: #f54780;
- font-size: 25px;
- font-weight: 700;
+  color: #f54780;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 .feature-tab:nth-child(1) {
   background-image: linear-gradient(to bottom, #fd6556, #f2319e);
   color: #fff;
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+.feature-tab img {
+  position: relative;
+  top: -50px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  padding: 1.5rem 1rem;
+}
+
+footer .logo {
+  color: #fff;
+}
+
+.footer button {
+  background-image: linear-gradient(to bottom, #4851ff, #f02aa6);
+  color: #fff;
+  border: none;
 }
