@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
+
 html {
   font-size: calc(15px + 0.390625vw);
 }
@@ -7,6 +9,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 :root {
@@ -15,7 +18,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family:"Plus Jakarta Sans", sans-serif;
   background-color: #f3f6fd;
   margin-bottom: 400px;
   overflow-x: hidden;
@@ -79,9 +82,21 @@ p {
 }
 
 .wrapper {
-  width: 100%;
   background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
   height: auto;
+}
+
+.design {
+  width: 80%;
+  padding-bottom: 80%;
+  border-radius: 50%;
+  position: relative;
+  background-image: linear-gradient(to bottom, #fd6556, #f2319e);
 }
 
 .members-hours {
@@ -90,18 +105,19 @@ p {
   border-radius: 5px;
   padding: 15px;
   position: absolute;
+
 }
 
 .members-hours:nth-child(1) {
+  right: -50px;
   top: 0;
-  right: 0;
 }
+
 
 .members-hours:nth-child(2) {
+  left: -50px;
   bottom: 0;
-  left: 0;
 }
-
 .members-hours * {
   padding: 0;
 }
@@ -115,10 +131,40 @@ p {
   font-size: 2.5rem;
 }
 
-.design {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
+
+ .features {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  column-count: 1;
+}
+
+.feature-tab {
+  width: 100%;
+  height: auto; 
+  padding: 25px;
+  margin: 30px 0;
+  background: #fff;
+  border-radius: 15px;
+}
+
+.feature-tab h3 {
+ font-weight: 900;
+ font-size: 22px;
+}
+
+.feature-tab p {
+  margin: 20px 0;
+}
+
+.link_bttn {
+ color: #f54780;
+ font-size: 25px;
+ font-weight: 700;
+}
+
+.feature-tab:nth-child(1) {
   background-image: linear-gradient(to bottom, #fd6556, #f2319e);
-  position: relative;
+  color: #fff;
 }
