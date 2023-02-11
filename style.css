@@ -37,7 +37,6 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-
 }
 
 .logo {
@@ -84,53 +83,11 @@ p {
   margin-left: 1rem;
 }
 
-.wrapper {
-  background: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  position: relative;
-  height: auto;
-}
-
 .design {
   width: 75%;
-  padding-bottom: 75%;
-  border-radius: 50%;
-  position: relative;
-  background: url(images/girl_hero_img.png) no-repeat right 75% bottom, linear-gradient(to bottom, #fd6556, #f2319e);
-}
-
-.members-hours {
-  width: auto;
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 15px;
-  position: absolute;
-}
-
-.members-hours:nth-child(1) {
-  right: -50px;
-  top: 0;
-}
-
-.members-hours:nth-child(2) {
-  left: -50px;
-  bottom: 0;
-}
-
-.members-hours * {
-  padding: 0;
-}
-
-.members-hours h3 {
-  color: var(--secondary-color);
-}
-
-.members-hours h4 {
-  color: var(--primary-color);
-  font-size: 2.5rem;
+  padding-bottom: 50%;
+  background-image: url(images/image-hero-mobile@.png);
+  align-self: center;
 }
 
 .features {
@@ -194,7 +151,6 @@ footer .logo {
   border: none;
 }
 
-
 @media screen and (min-width: 768px) {
   nav {
     position: relative;
@@ -205,14 +161,14 @@ footer .logo {
   .headline {
     flex-direction: row;
   }
-  
+
   h1 {
     margin: 5rem 1rem 0 2rem;
   }
 
   p {
     font-size: 17px;
-    margin: -1rem 0  0 2rem;
+    margin: -1rem 0 0 2rem;
   }
 
   .headline button {
@@ -227,53 +183,28 @@ footer .logo {
     justify-content: center;
   }
 
-.feature-tab {
-  width: 25%;
-}
+  .feature-tab {
+    width: 25%;
+  }
 
-.feature-tab p {
-  width: 80%;
-}
+  .feature-tab p {
+    width: 80%;
+  }
 
-.footer .logo {
-  margin-left: 5rem;
-}
+  .footer .logo {
+    margin-left: 5rem;
+  }
 
-.footer button {
-  margin-right: 5rem;
-}
+  .footer button {
+    margin-right: 5rem;
+  }
 
-.design {
-  width: 35%;
-  padding-bottom: 60%;
-  border-radius: 200px;
-  position: relative;
-  background: url(images/girl_hero_img.png) no-repeat right 75% bottom, linear-gradient(to bottom, #fd6556, #f2319e);
-}
-
-.headline::before {
-  content: '';
-  position: absolute;
-  background: linear-gradient(to right, hsl(291deg 56% 49%), hsl(254deg 80% 60%));
-  width: 20%;
-  padding-bottom: 50%;
-  top: -175px;
-  right: 0;
-  transform: rotate(45deg);
-}
-
-.members-hours h4 {
-  font-size: 1.5rem;
-}
-
-.members-hours:nth-child(1) {
-  right: -50px;
-  top: 50px;
-}
-
-.members-hours:nth-child(2) {
-  left: -50px;
-  bottom: 50px;
-  box-shadow: -10px 10px 65px 0px #91959e;
-}
+  .design {
+    width: 75%;
+    padding-top: 75%;
+    margin-top: -15%;
+    padding-bottom: 0;
+    background-image: url(images/image-hero-desktop.png);
+    background-repeat: no-repeat;
+  }
 }
