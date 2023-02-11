@@ -61,7 +61,6 @@ nav button {
   display: flex;
   flex-direction: column;
   align-items: start;
- 
 }
 
 .headline * {
@@ -198,7 +197,13 @@ footer .logo {
 
 @media screen and (min-width: 768px) {
   nav {
+    position: relative;
     padding: 1rem 8rem 1rem 3rem;
+    z-index: 2;
+  }
+
+  .headline {
+    flex-direction: row;
   }
   
   h1 {
@@ -206,7 +211,6 @@ footer .logo {
   }
 
   p {
-    width: 40%;
     font-size: 17px;
     margin: -1rem 0  0 2rem;
   }
@@ -215,9 +219,6 @@ footer .logo {
     margin-left: 2.5rem;
   }
 
-  .wrapper {
-    display: none;
-  }
   .features {
     width: 100%;
     display: flex;
@@ -225,6 +226,7 @@ footer .logo {
     gap: 20px;
     justify-content: center;
   }
+
 .feature-tab {
   width: 25%;
 }
@@ -239,5 +241,39 @@ footer .logo {
 
 .footer button {
   margin-right: 5rem;
+}
+
+.design {
+  width: 35%;
+  padding-bottom: 60%;
+  border-radius: 200px;
+  position: relative;
+  background: url(images/girl_hero_img.png) no-repeat right 75% bottom, linear-gradient(to bottom, #fd6556, #f2319e);
+}
+
+.headline::before {
+  content: '';
+  position: absolute;
+  background: linear-gradient(to right, hsl(291deg 56% 49%), hsl(254deg 80% 60%));
+  width: 20%;
+  padding-bottom: 50%;
+  top: -175px;
+  right: 0;
+  transform: rotate(45deg);
+}
+
+.members-hours h4 {
+  font-size: 1.5rem;
+}
+
+.members-hours:nth-child(1) {
+  right: -50px;
+  top: 50px;
+}
+
+.members-hours:nth-child(2) {
+  left: -50px;
+  bottom: 50px;
+  box-shadow: -10px 10px 65px 0px #91959e;
 }
 }
